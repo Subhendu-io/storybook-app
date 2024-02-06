@@ -8,7 +8,7 @@ type User = {
   name: string;
 };
 
-export const Home: React.FC = () => {
+export const Dashboard: React.FC = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
