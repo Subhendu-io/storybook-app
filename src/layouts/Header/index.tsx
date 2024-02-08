@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../../components/Button';
+import { Button } from '../../components/Buttons';
 
 import './style.css';
 
@@ -17,17 +17,17 @@ interface HeaderProps {
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
-    <div className="storybook-header">
-      <div>
+    <div className="app-header">
+      <div className="header-left">
         <h1>StoryBook</h1>
       </div>
-      <div>
+      <div className="header-right">
         {user ? (
           <>
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            <Button primary size="small" onClick={onLogout} label="Log out" />
           </>
         ) : (
           <>

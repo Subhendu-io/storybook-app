@@ -1,18 +1,19 @@
-.storybook-header {
+.app-header {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
   justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  display: flex;
+  position: fixed;
+  background-color: rgb(75, 83, 105);
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
-.storybook-header svg {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.storybook-header h1 {
+.app-header h1 {
+  color: white;
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -21,12 +22,16 @@
   vertical-align: top;
 }
 
-.storybook-header button + button {
-  margin-left: 10px;
+.app-header button + button {
+  margin: 0px 10px;
 }
 
-.storybook-header .welcome {
-  color: #333;
+.app-header .welcome {
+  color: white;
   font-size: 14px;
   margin-right: 10px;
+}
+
+.header-right{
+  padding-right: 20px;
 }

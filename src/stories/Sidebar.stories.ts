@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Header } from '../layouts/Header';
+import { Sidebar } from '../layouts/Sidebar';
 
 const meta = {
-  title: 'Layouts/Header',
-  component: Header,
+  title: 'Layouts/Sidebar',
+  component: Sidebar,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Sidebar>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -21,5 +21,3 @@ export const LoggedIn: Story = {
     },
   },
 };
-
-export const LoggedOut: Story = {};

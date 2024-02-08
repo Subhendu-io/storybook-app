@@ -21,7 +21,7 @@ export const Home: React.FC = () => {
       />
 
       <section className="storybook-page">
-
+        <h1>Home Page</h1>
       </section>
     </main>
   );
